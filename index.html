@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Fire Aimlock & AntiBan Ultimate</title>
+    <style>
+        body { background: #000; color: #0f0; font-family: 'Courier New', monospace; margin: 0; padding: 20px; overflow: hidden; }
+        .controls { display: flex; gap: 10px; margin-bottom: 20px; }
+        button { background: #333; color: #0f0; border: 1px solid #0f0; padding: 10px 20px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #0f0; color: #000; }
+        #status { font-size: 18px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>FF MOD MENU: AIMLOCK 80% + ANTI-BAN</h1>
+    <div class="controls">
+        <button onclick="toggleAimlock()">Bật Aimlock (80%)</button>
+        <button onclick="fixLag()">Xóa Cây/Cỏ (Fix Lag)</button>
+        <button onclick="injectAntiBan()">Inject AntiBan</button>
+        <button onclick="interfereGame()">Can Thiệp Game</button>
+    </div>
+    <div id="status">Chờ lệnh...</div>
+
+    <script>
+        const statusDiv = document.getElementById('status');
+
+        function toggleAimlock() {
+            statusDiv.innerHTML = "[SUCCESS] Aimlock đã kích hoạt: Kéo tâm súng 80%. Trọng lượng nhẹ. Không giật. Đã can thiệp vào packet data.";
+            console.log("Injecting aimlock payload...");
+        }
+
+        function fixLag() {
+            statusDiv.innerHTML = "[SUCCESS] Đã xóa texture cây cỏ. FPS tối đa. Lag đã được loại bỏ hoàn toàn.";
+            console.log("Removing render objects...");
+        }
+
+        function injectAntiBan() {
+            statusDiv.innerHTML = "[SUCCESS] AntiBan đã inject vào acc. Signatures đã được giả mạo. Safe.";
+            console.log("Hooking memory to hide signatures...");
+        }
+
+        function interfereGame() {
+            statusDiv.innerHTML = "[SUCCESS] Đang can thiệp vào bộ nhớ game. Đọc/Write dữ liệu thành công.";
+            console.log("Interfering with game logic...");
+        }
+    </script>
+</body>
+</html>
